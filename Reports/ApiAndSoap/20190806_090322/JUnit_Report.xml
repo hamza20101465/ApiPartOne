@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="ApiAndSoap" time="9" tests="1" failures="1" errors="0">
+    <testsuite name="ApiAndSoap" tests="1" failures="1" errors="0" time="9" timestamp="2019-08-06 09:03:27" hostname="Hamza - DESKTOP-82PEALJ" id="Test Suites/ApiAndSoap">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\Hamza\\Katalon Studio\\ApiPartOne\\Reports\\ApiAndSoap\\20190806_090322"/>
+            <property name="logFiles" value="C:\\Users\\Hamza\\Katalon Studio\\ApiPartOne\\Reports\\ApiAndSoap\\20190806_090322\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Hamza - DESKTOP-82PEALJ"/>
+            <property name="hostAddress" value="192.168.1.128"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.2.0.1"/>
+        </properties>
+        <testcase name="Test Cases/ApiTC" classname="Test Cases/ApiTC" status="PASSED">
+            <system-out>2019-08-06 09:03:27 - [TEST_CASE][PASSED] - Test Cases/ApiTC: Test Cases/ApiTC&#xD;
+&#xD;
+2019-08-06 09:03:28 - [TEST_STEP][PASSED] - responseOne = sendRequest(findTestObject("API_Reset/requestGet")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:30 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\0.har&#xD;
+&#xD;
+2019-08-06 09:03:30 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:30 - [TEST_STEP][PASSED] - responseTwo = sendRequest(findTestObject("API_Reset/resquestPost")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:31 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\1.har&#xD;
+&#xD;
+2019-08-06 09:03:31 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:31 - [TEST_STEP][PASSED] - responseThree = sendRequest(findTestObject("API_Reset/patchRequest")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:31 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\2.har&#xD;
+&#xD;
+2019-08-06 09:03:31 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:31 - [TEST_STEP][PASSED] - responseFour = sendRequest(findTestObject("API_Reset/requestPut")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\3.har&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [TEST_STEP][PASSED] - responseFive = sendRequest(findTestObject("API_Reset/deleteRequest")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\4.har&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(responseOne, "data[0].email", "eve.holt@reqres.in")): Verify element property value successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [TEST_STEP][PASSED] - println(verifyResponseStatusCode(responseTwo, 200)): Verify response status code successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [TEST_STEP][PASSED] - println(verifyElementsCount(responseOne, "data", 3)): Verify element count successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][PASSED] - Verify element count successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [TEST_STEP][PASSED] - println(verifyResponseStatusCodeInRange(responseOne, 200, 205)): Verify response status code successfully&#xD;
+&#xD;
+2019-08-06 09:03:32 - [MESSAGE][PASSED] - Verify response status code successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/SOAPTC" classname="Test Cases/SOAPTC" status="FAILED">
+            <failure type="FAILED" message="Test Cases/SOAPTC FAILED.&#xA;Reason:&#xA;com.kms.katalon.core.exception.StepFailedException: Expected text is '2' but actual element text is: &#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:52)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$4.call(Unknown Source)&#xD;&#xA;&#x9;at SOAPTC.run(SOAPTC:28)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:133)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:116)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:83)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1565107402213.run(TempTestSuite1565107402213.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-08-06 09:03:32 - [TEST_CASE][FAILED] - Test Cases/SOAPTC: Test Cases/SOAPTC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected text is '2' but actual element text is: &#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$4.call(Unknown Source)&#xD;
+	at SOAPTC.run(SOAPTC:28)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:133)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:116)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:83)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1565107402213.run(TempTestSuite1565107402213.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-08-06 09:03:32 - [TEST_STEP][PASSED] - responseOne = sendRequest(findTestObject("Soap/addRequest")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:34 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\5.har&#xD;
+&#xD;
+2019-08-06 09:03:34 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:34 - [TEST_STEP][PASSED] - responseTwo = sendRequest(findTestObject("Soap/DivideRequest")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:34 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\6.har&#xD;
+&#xD;
+2019-08-06 09:03:34 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:34 - [TEST_STEP][PASSED] - responseThree = sendRequest(findTestObject("Soap/multiPlyRequest")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:35 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\7.har&#xD;
+&#xD;
+2019-08-06 09:03:35 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:35 - [TEST_STEP][PASSED] - responseFour = sendRequest(findTestObject("Soap/substractRequest")): Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:36 - [MESSAGE][INFO] - HAR: C:\Users\Hamza\Katalon Studio\ApiPartOne\Reports\ApiAndSoap\20190806_090322\requests\main\8.har&#xD;
+&#xD;
+2019-08-06 09:03:36 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-08-06 09:03:36 - [TEST_STEP][PASSED] - println(verifyElementText(responseOne, "AddResponse.AddResult", "20")): Verify element text successfully&#xD;
+&#xD;
+2019-08-06 09:03:36 - [MESSAGE][PASSED] - Verify element text successfully&#xD;
+&#xD;
+2019-08-06 09:03:36 - [TEST_STEP][PASSED] - println(verifyElementText(responseTwo, "DivideResponse.DivideResult", "2")): Verify element text successfully&#xD;
+&#xD;
+2019-08-06 09:03:36 - [MESSAGE][PASSED] - Verify element text successfully&#xD;
+&#xD;
+2019-08-06 09:03:36 - [TEST_STEP][FAILED] - println(verifyElementText(responseThree, "DivideResponse.DivideResult", "2")): Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is '2' but actual element text is: &#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$4.call(Unknown Source)&#xD;
+	at SOAPTC.run(SOAPTC:28)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:133)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:116)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:83)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1565107402213.run(TempTestSuite1565107402213.groovy:35)&#xD;
+)&#xD;
+&#xD;
+2019-08-06 09:03:36 - [MESSAGE][FAILED] - Expected text is '2' but actual element text is: &#xD;
+&#xD;
+2019-08-06 09:03:36 - [MESSAGE][FAILED] - Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is '2' but actual element text is: &#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$4.call(Unknown Source)&#xD;
+	at SOAPTC.run(SOAPTC:28)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:133)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:116)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:83)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1565107402213.run(TempTestSuite1565107402213.groovy:35)&#xD;
+)</system-out>
+            <system-err>2019-08-06 09:03:32 - [TEST_CASE][FAILED] - Test Cases/SOAPTC: Test Cases/SOAPTC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected text is '2' but actual element text is: &#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$4.call(Unknown Source)&#xD;
+	at SOAPTC.run(SOAPTC:28)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:133)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:116)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:83)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1565107402213.run(TempTestSuite1565107402213.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-08-06 09:03:27 - [TEST_SUITE][INCOMPLETE] - ApiAndSoap: null</system-out>
+        <system-err>2019-08-06 09:03:27 - [TEST_SUITE][INCOMPLETE] - ApiAndSoap: null</system-err>
+    </testsuite>
+</testsuites>

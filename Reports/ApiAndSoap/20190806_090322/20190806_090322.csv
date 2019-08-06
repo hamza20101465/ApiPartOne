@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ApiAndSoap,,,,2019-08-06 09:03:27,2019-08-06 09:03:36,9.187s,INCOMPLETE
+,,,,,,,
+Test Cases/ApiTC,,,,2019-08-06 09:03:27,2019-08-06 09:03:32,4.831s,PASSED
+"responseOne = sendRequest(findTestObject(""API_Reset/requestGet""))",,,,2019-08-06 09:03:28,2019-08-06 09:03:30,2.281s,PASSED
+"responseTwo = sendRequest(findTestObject(""API_Reset/resquestPost""))",,,,2019-08-06 09:03:30,2019-08-06 09:03:31,0.555s,PASSED
+"responseThree = sendRequest(findTestObject(""API_Reset/patchRequest""))",,,,2019-08-06 09:03:31,2019-08-06 09:03:31,0.429s,PASSED
+"responseFour = sendRequest(findTestObject(""API_Reset/requestPut""))",,,,2019-08-06 09:03:31,2019-08-06 09:03:32,0.410s,PASSED
+"responseFive = sendRequest(findTestObject(""API_Reset/deleteRequest""))",,,,2019-08-06 09:03:32,2019-08-06 09:03:32,0.412s,PASSED
+"println(verifyElementPropertyValue(responseOne, ""data[0].email"", ""eve.holt@reqres.in""))",,,,2019-08-06 09:03:32,2019-08-06 09:03:32,0.051s,PASSED
+"println(verifyResponseStatusCode(responseTwo, 200))",,,,2019-08-06 09:03:32,2019-08-06 09:03:32,0.022s,PASSED
+"println(verifyElementsCount(responseOne, ""data"", 3))",,,,2019-08-06 09:03:32,2019-08-06 09:03:32,0.030s,PASSED
+"println(verifyResponseStatusCodeInRange(responseOne, 200, 205))",,,,2019-08-06 09:03:32,2019-08-06 09:03:32,0.021s,PASSED
+,,,,,,,
+Test Cases/SOAPTC,,,,2019-08-06 09:03:32,2019-08-06 09:03:36,4.071s,FAILED
+"responseOne = sendRequest(findTestObject(""Soap/addRequest""))",,,,2019-08-06 09:03:32,2019-08-06 09:03:34,1.341s,PASSED
+"responseTwo = sendRequest(findTestObject(""Soap/DivideRequest""))",,,,2019-08-06 09:03:34,2019-08-06 09:03:34,0.583s,PASSED
+"responseThree = sendRequest(findTestObject(""Soap/multiPlyRequest""))",,,,2019-08-06 09:03:34,2019-08-06 09:03:35,0.594s,PASSED
+"responseFour = sendRequest(findTestObject(""Soap/substractRequest""))",,,,2019-08-06 09:03:35,2019-08-06 09:03:36,0.617s,PASSED
+"println(verifyElementText(responseOne, ""AddResponse.AddResult"", ""20""))",,,,2019-08-06 09:03:36,2019-08-06 09:03:36,0.363s,PASSED
+"println(verifyElementText(responseTwo, ""DivideResponse.DivideResult"", ""2""))",,,,2019-08-06 09:03:36,2019-08-06 09:03:36,0.072s,PASSED
+"println(verifyElementText(responseThree, ""DivideResponse.DivideResult"", ""2""))",,,,2019-08-06 09:03:36,2019-08-06 09:03:36,0.131s,FAILED
